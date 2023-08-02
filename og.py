@@ -66,7 +66,7 @@ def main():
     x=str(input("Name:"))
     PlayerObj=Player(x)
     z=str(input("Enter any letter to begin."))
-    mar()
+    acad()
 
 def acad():
     global spaces
@@ -567,7 +567,48 @@ def reb():
     endgame()
 
 def endgame():
-    print_slow("I'll add endings here in a bit")
+    ending = ""
+
+    # Graduate as a doctor/lawyer (60-100) vs. dropping out, not graduating (0-59)
+    if 60 <= PlayerObj.c1 <= 100:
+        ending += "YOU DID IT! YOU BECAME ONE OF THE BEST LAWYERS IN THE COUNTRY. "
+    else:
+        ending += "You did not manage to graduate, and your dreams were shattered. "
+
+    # No friend/ lonely, parents happy (0-50) vs. have friends and parents are not happy (51-79) vs. have friends/ happy parents (80-100)
+    if PlayerObj.c2 <= 50:
+        ending += "You felt lonely without any friends, but your parents were happy with your life choices. "
+    elif 51 <= PlayerObj.c2 <= 79:
+        ending += "You had friends and found happiness in your own way, but your parents weren't fully supportive of your decisions. "
+    else:
+        ending += "You had wonderful friends and supportive parents, making your life fulfilling and joyous. "
+
+    # Get a job (0-50) vs. no job (51-100)
+    if PlayerObj.c3 <= 50:
+        ending += "You struggled to find a job, and it became a source of stress in your life. "
+    else:
+        ending += "You were unable to secure a job, leaving you facing financial challenges. "
+
+    # Get an arranged marriage parents happy (0-69) vs. marriage (run away), not happy parents (70-89) vs. married but parents happy (90-100)
+    if PlayerObj.c4 <= 69:
+        ending += "You reluctantly entered an arranged marriage to make your parents happy, but it wasn't what you truly desired. "
+    elif 70 <= PlayerObj.c4 <= 89:
+        ending += "You decided to run away and marry the person you loved, causing tension with your parents. "
+    else:
+        ending += "You managed to marry the person you loved, and your parents were happy with your choice. "
+
+    # Get disowned (being kicked off from home) → not reconciled with parents (0-59) vs. run away (with my savings) (60-84) vs. happy ever after (everything satisfied) (85-100)
+    if PlayerObj.c5 <= 59:
+        ending += "You were disowned and couldn't reconcile with your parents, leaving you with a heavy heart. "
+    elif 60 <= PlayerObj.c5 <= 84:
+        ending += "You decided to run away with your savings, seeking a life of freedom and independence. "
+    else:
+        ending += "You managed to find happiness and reconciliation with your family, leading to a happy-ever-after ending. "
+
+    # Print the final ending
+    print_slow(ending)
+
+
 main()
 
 
