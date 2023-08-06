@@ -103,10 +103,18 @@ def acad():
     PlayerObj.c1 += new_dict[ans.lower()]
     ans=ans.lower()
     if ans == "b":
+        print_slow("Hey Mom/Dad, can we talk?")
+        print_slow("Sure, what's up?")
+        print_slow("Well, you know how important my studies are, right?")
+        print_slow("Absolutely, we've always emphasized that.")
+        print_slow("With exams coming up, I really think I could do better if I stayed home to study for a bit. Would that be okay?")
+        print_slow("I understand.")
         print_slow("Well done! You managed to communicate the importance of your exam to your parents and can now focus on studying.")
     elif ans == "c":
+        print_slow("Guess I just have to study through all this noise....")
         print_slow("Great job! You found a way to study during the gathering without offending anyone.")
     else:
+        print_slow("I'll just go for that now & maybe afterwards I'll be able to find time to study...")
         print_slow("You attended the family gathering, but it was difficult to focus on studying afterward, impacting your exam preparation.")
     print_slow("You have a strong aspiration to pursue higher education and work towards your career goals.")
     print_slow("However, your parents are unsupportive and believe that higher education is unnecessary for a girl.")
@@ -125,12 +133,16 @@ def acad():
     PlayerObj.c1 += new_dict[ans.lower()]
     ans=ans.lower()
     if ans == "b":
+        print_slow("Mum, Dad, this is my life. And I don't care about what you want for me but this is my life and I will decide for myself!")
         print_slow("Well done! You stood up for your dreams and committed to studying hard despite your parents' beliefs.")
     elif ans == "d":
+        print_slow("The following day, you look for your teacher and sought her help on how you can persuade your parents.")
         print_slow("Great decision! Your teacher's support will help you in convincing your parents about the importance of education.")
     elif ans == "a":
+        print_slow("You gave it more thought and came up with a reasonable argument. The next day, you asked to speak to your parents.")
         print_slow("You managed to find a middle ground and convinced your parents to let you pursue education alongside learning housekeeping.")
     else:
+        print_slow("You gave it some more thought, but you doubt it would impact anything.")
         print_slow("Sadly, you dropped out of school and focused on housekeeping, giving up on your dreams of education.")
     print_slow("It's time to choose your elective course, but your parents don't let you choose what you want.")
     print_slow("Instead, they insist on you selecting a course that is popular among arranged marriage conditions.")
@@ -147,11 +159,14 @@ def acad():
     ans=ans.lower()
     PlayerObj.c1 += new_dict[ans.lower()]
     if ans == "a":
+        print_slow("You considered the electives you want to take and came up with an explanation for your parents. The next day, you looked for them.")
         print_slow("Well done! You chose to communicate openly with your parents and explain the importance of the elective course for your future goals.")
     elif ans == "c":
+        print_slow("It was difficult, but...")
         print_slow("Great job! You took a brave step and secretly enrolled in the elective course that you want to take.")
     else:
-        print_slow("You agreed to take the preferred course, but it left you feeling unsatisfied and giving up on your passion.")
+        print_slow("why do I have to do this.... it's not what I wanted...")
+        print_slow("Regardless, you agreed to take the preferred course, but it left you feeling unsatisfied and giving up on your passion.")
     social()
 
 def social():
