@@ -28,7 +28,11 @@ class Boss():
             "{} come here, OR ELSE I WILL MAKE SURE YOU ARE DISOWNED".format(fighter.name),
             "Say something I'm giving up on you",
             "OUR AGE DIFFERENCE? IT DOESN'T MATTER.",
-            "WHERE. IS. MY. DOWRY?"
+            "WHERE. IS. MY. DOWRY?",
+            "I WILL NOT LET YOU OUT OF MY SIGHT",
+            "YOU ARE MINE",
+            "DIE OR DONT SAY BYE",
+            "SLAY? I'M GONNA SLAY YOU WITH THIS POCKET KNIFE."
         ]
         self.dmg = {
             "Make me a sandwich. NOW.": 5,
@@ -38,7 +42,11 @@ class Boss():
             "{} come here, OR ELSE I WILL MAKE SURE YOU ARE DISOWNED".format(fighter.name): 25,
             "Say something I'm giving up on you": 12,
             "OUR AGE DIFFERENCE? IT DOESN'T MATTER.": 9,
-            "WHERE. IS. MY. DOWRY?":25
+            "WHERE. IS. MY. DOWRY?":25,
+            "I WILL NOT LET YOU OUT OF MY SIGHT": 12,
+            "YOU ARE MINE":10,
+            "DIE OR DONT SAY BYE":13,
+            "SLAY? I'M GONNA SLAY YOU WITH THIS POCKET KNIFE.":4
         }
 
 
@@ -269,7 +277,6 @@ def career():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Sacrifice sleep and personal time to prepare for the fair without neglecting household chores and duties.")
     print(spaces + "B) Prioritize household responsibilities over the art fair to avoid stress and pressure.")
@@ -320,7 +327,6 @@ def career():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Abandon your dream of applying for the scholarship to appease your parents and maintain family harmony.")
     print(spaces + "B) Apply for the scholarship secretly in hopes that you get it and your parents might change their minds.")
@@ -529,7 +535,6 @@ def reb():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Join your friends in getting piercings and worry about explaining to your parents afterwards.")
     print(spaces + "B) Explain to your friends that you cannot get piercings due to cultural restrictions and risk being chided.")
@@ -616,5 +621,3 @@ def endgame():
 
 
 main()
-
-
