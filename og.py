@@ -93,8 +93,8 @@ def acad():
     ans=str(input("What do you choose? (Please enter your answer as A, B or C)"))
     newdict={"a":25,"b":20,"c":15}
     
-    PlayerObj.c1+=newdict[ans.lower()]
-    ans=ans.lower()
+    PlayerObj.c1+=newdict[ans.lower().rstrip().lstrip()]
+    ans=ans.lower().rstrip().lstrip()
     if ans=="c":
         print_slow("Good job! You can now start to pursue your dreams.")    
     print_slow("You have an important exam coming up, but your parents want you to attend a family gathering on the day before.")
@@ -108,8 +108,8 @@ def acad():
     print(spaces + "C) Sneak in study time during the gathering so you will not join the conversation between family a lot.")
     ans = str(input("What do you choose? (Please enter your answer as A, B or C)"))
     new_dict = {"a": 10, "b": 25, "c": 20}
-    PlayerObj.c1 += new_dict[ans.lower()]
-    ans=ans.lower()
+    PlayerObj.c1 += new_dict[ans.lower().rstrip().lstrip()]
+    ans=ans.lower().rstrip().lstrip()
     if ans == "b":
         print_slow("Hey Mom/Dad, can we talk?")
         print_slow("Sure, what's up?")
@@ -138,8 +138,8 @@ def acad():
     ans = str(input("What do you choose? (Please enter your answer as A, B, C, or D)"))
     new_dict = {"a": 10, "b": 25, "c": 5, "d": 20}
     
-    PlayerObj.c1 += new_dict[ans.lower()]
-    ans=ans.lower()
+    PlayerObj.c1 += new_dict[ans.lower().rstrip().lstrip()]
+    ans=ans.lower().rstrip().lstrip()
     if ans == "b":
         print_slow("Mum, Dad, this is my life. And I don't care about what you want for me but this is my life and I will decide for myself!")
         print_slow("Well done! You stood up for your dreams and committed to studying hard despite your parents' beliefs.")
@@ -164,8 +164,8 @@ def acad():
     print(spaces + "C) Secretly enroll in the elective course that you want to take.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 20, "b": 15, "c": 25}
-    ans=ans.lower()
-    PlayerObj.c1 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c1 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "a":
         print_slow("You considered the electives you want to take and came up with an explanation for your parents. The next day, you looked for them.")
         print_slow("Well done! You chose to communicate openly with your parents and explain the importance of the elective course for your future goals.")
@@ -190,7 +190,7 @@ def social():
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 10, "b": 15, "c": 25}
     
-    PlayerObj.c2 += new_dict[ans.lower()]
+    PlayerObj.c2 += new_dict[ans.lower().rstrip().lstrip()]
     ans=ans.lower
     if ans == "b":
         print_slow("You found a way to stay connected with your friends despite the restrictions, keeping your friendships alive.")
@@ -211,7 +211,7 @@ def social():
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 5, "b": 15, "c": 25}
     
-    PlayerObj.c2 += new_dict[ans.lower()]
+    PlayerObj.c2 += new_dict[ans.lower().rstrip().lstrip()]
     ans=ans.lower
     if ans == "b":
         print_slow("You decided to create a private and anonymous social media account to maintain your connections and express yourself freely.")
@@ -233,8 +233,8 @@ def social():
     print(spaces + "C) Convince your parents by explaining the event's significance and ensuring them of your responsible behavior during the occasion.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 10, "b": 15, "c": 25}
-    ans=ans.lower()
-    PlayerObj.c2 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c2 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "b":
         print_slow("You decided to attend the mixed-gender event despite your parents' objections.")
         print_slow("You sought support from understanding friends or cousins to accompany you, making the experience enjoyable.")
@@ -257,8 +257,8 @@ def social():
     print(spaces + "C) Initiate an open and honest conversation with your parents about your feelings, expressing your desire to find a balance between your personal happiness and cultural values.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 5, "b": 15, "c": 25}
-    ans=ans.lower()
-    PlayerObj.c2 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c2 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "b":
         print_slow("You decided to enter into a secret relationship with the person you have feelings for.")
         print_slow("While it may bring happiness, be cautious as it carries the risk of heartache if discovered.")
@@ -284,8 +284,8 @@ def career():
     print(spaces + "D) Sign up for the fair, focus on the project, and neglect household duties.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, C, or D)"))
     new_dict = {"a": 15, "b": 10, "c": 20, "d": 30}
-    ans=ans.lower()
-    PlayerObj.c3 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c3 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "a":
         print_slow("You decided to sacrifice sleep and personal time to prepare for the art fair.")
         print_slow("While managing household chores and duties, your dedication to both aspects of life shows your responsibility.")
@@ -310,8 +310,8 @@ def career():
     print(spaces + "C) Gather courage and openly participate in the art exhibition, standing by your artistic expression.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 0, "b": 15, "c": 25}
-    ans=ans.lower()
-    PlayerObj.c3 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c3 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "b":
         print_slow("You decided to submit your artwork anonymously to gauge its reception.")
         print_slow("This way, you can still participate in the exhibition while keeping your identity hidden.")
@@ -333,8 +333,8 @@ def career():
     print(spaces + "C) Seek support from your teacher to help convince your parents to support your educational and career aspirations.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 5, "b": 15, "c": 20}
-    ans=ans.lower()
-    PlayerObj.c3 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c3 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "b":
         print_slow("You decided to apply for the scholarship secretly, hoping that you get it.")
         print_slow("You believe that your success might change your parents' minds about sending you away for education.")
@@ -358,8 +358,8 @@ def mar():
     print(spaces + "C) Burst into tears, showing visible signs of distress.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 10, "b": 15, "c": 5}
-    ans=ans.lower()
-    PlayerObj.c4 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c4 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "b":
         print_slow("You decided to stay quiet and contemplative, not expressing your feelings right away.")
         print_slow("You are trying to process the information and understand your emotions before reacting.")
@@ -380,8 +380,8 @@ def mar():
     print(spaces + "C) Choose to remain silent during the discussion, showing your resistance through non-verbal cues.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 20, "b": 5, "c": 10}
-    ans=ans.lower()
-    PlayerObj.c4 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c4 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "a":
         print_slow("You decided to engage in a calm and diplomatic discussion with your family.")
         print_slow("You express your concerns respectfully, trying to make them understand your perspective.")
@@ -402,8 +402,8 @@ def mar():
     print(spaces + "C) Choose to delay the decision and continue exploring your options.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 10, "b": 25, "c": 15}
-    ans=ans.lower()
-    PlayerObj.c4 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c4 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "b":
         print_slow("You decided to stand up for your autonomy and express your decision not to go through with the arranged marriage.")
         print_slow("With courage and determination, you choose to follow your heart and make a bold decision for yourself.")
@@ -518,8 +518,8 @@ def reb():
     print(spaces + "C) Attempt to discuss with your parents about making an exception this time, such as attending for a limited time under their supervision.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 10, "b": 5, "c": 20}
-    ans=ans.lower()
-    PlayerObj.c5 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c5 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "c":
         print_slow("Congratulations! You decided to have an open discussion with your parents.")
         print_slow("You attempted to make an exception by proposing to attend for a limited time under their supervision.")
@@ -541,8 +541,8 @@ def reb():
     print(spaces + "C) Attempt to seek your parents' approval in getting piercings.")
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
     new_dict = {"a": 15, "b": 10, "c": 15}
-    ans=ans.lower()
-    PlayerObj.c5 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c5 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "c":
         print_slow("You decided to attempt seeking your parents' approval in getting piercings.")
         print_slow("By having an open conversation with them, you hope to find a way to respect your cultural restrictions while expressing your desires.")
@@ -564,8 +564,8 @@ def reb():
     ans = str(input("What do you choose? (Please enter your answer as A, B, or C)"))
 
     new_dict = {"a": 10, "b": 15, "c": 20}
-    ans=ans.lower()
-    PlayerObj.c5 += new_dict[ans.lower()]
+    ans=ans.lower().rstrip().lstrip()
+    PlayerObj.c5 += new_dict[ans.lower().rstrip().lstrip()]
     if ans == "c":
         print_slow("Congratulations! You decided to have a proper discussion with your parents.")
         print_slow("By expressing your desire for autonomy in your love life, you hope to find understanding and support.")
