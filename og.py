@@ -181,7 +181,6 @@ def social():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Comply with your parents' restrictions and avoid using social media altogether.")
     print(spaces + "B) Create a private and anonymous social media account to connect with friends and express yourself freely.")
@@ -205,7 +204,6 @@ def social():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Respect your parents' wishes and avoid attending the event, feeling disappointed about missing the fun experience.")
     print(spaces + "B) Attend the event against your parents' wishes, seeking support from understanding friends or cousins to accompany you.")
@@ -227,7 +225,6 @@ def social():
         print_slow("While you felt disappointed about missing the fun experience, you valued your parents' trust and understanding.")
     print_slow("You find yourself developing feelings for someone outside of your cultural or religious background.")
     print_slow("However, your parents strictly discourage any romantic involvement with such individuals.")
-    print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
     print_slow("What do you wish to do?")
@@ -285,7 +282,6 @@ def career():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Decide not to join the art exhibition to avoid potential controversy.")
     print(spaces + "B) Submit your artwork anonymously to get a sense of its reception without revealing your identity.")
@@ -335,7 +331,6 @@ def mar():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Smile and accept your family's announcement.")
     print(spaces + "B) Stay quiet and contemplative, not expressing your feelings right away.")
@@ -358,7 +353,6 @@ def mar():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Engage in a calm and diplomatic discussion with your family, expressing your concerns respectfully.")
     print(spaces + "B) Raise your voice and become visibly upset during the conversation.")
@@ -381,7 +375,6 @@ def mar():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Agree to the arranged marriage, putting aside your own desires for family harmony.")
     print(spaces + "B) Stand up for your autonomy and express your decision not to go through with the arranged marriage.")
@@ -498,7 +491,6 @@ def reb():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Respect your parents' wishes and reluctantly reject your friends, abiding by the curfew and missing the party.")
     print(spaces + "B) Sneak out without telling your parents, risking severe consequences if you get caught.")
@@ -545,7 +537,6 @@ def reb():
     print_slow("What do you wish to do?")
     spaces = "            "
     os.system('cls')
-    print_slow("What do you wish to do?")
     print('\n\n\n\n\n\n\n\n')
     print(spaces + "A) Express your positive feelings towards the boy and agree to enter a relationship.")
     print(spaces + "B) Reject the boy for now as you believe your parents should decide on your marriage partner.")
